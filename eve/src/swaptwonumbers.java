@@ -1,12 +1,16 @@
-
+import java.util.Scanner;
 public class swaptwonumbers {
 public static void main(String args[])
 {
-	float first=5.2f,second=6.3f;
+	Scanner reader=new Scanner(System.in);
+	System.out.println("enter the first number");
+	long first=reader.nextLong();
+	System.out.println("enter the secong number");
+	long second=reader.nextLong();
 	System.out.println("--before swap--");
 	System.out.println("first number"+first);
 	System.out.println("second number"+second);
-	float temporary=first;
+	long temporary=first;
 	first=second;
 	second=temporary;
 	System.out.println("***********************");
